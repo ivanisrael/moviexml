@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movies>
+	<movie id="101">
+		<title>Spectre</title>
+        <date>
+            <year>2015</year>
+            <month>November</month>
+            <day>06</day>
+        </date>
+		<genres>
+			<genre id="1">Action</genre>
+			<genre id="2">Adventure</genre>
+			<genre id="3">Thriller</genre>
+		</genres>
+		<synopsis>A cryptic message from the past sends James Bond on a rogue mission to Mexico City and eventually Rome, where he meets Lucia, the beautiful and forbidden widow of an infamous criminal. Bond infiltrates a secret meeting and uncovers the existence of the sinister organisation known as SPECTRE.</synopsis>
+		<duration>148 min</duration>
+		<actors>
+			<actor id="1">
+				<name>
+					<fname>Daniel</fname>
+					<lname>Craid</lname>
+				</name>
+				<role>Main Actor</role>
+				<gender>Male</gender>
+			</actor>
+			<actor id="2">
+                <name>
+                    <fname>Christoph</fname>
+                    <lname>Waltz</lname>
+                </name>
+                <role>Main Actor</role>
+                <gender>Male</gender>
+            </actor>
+            <actor id="3">
+                <name>
+                    <fname>Lea</fname>
+                    <lname>Seydoux</lname>
+                </name>
+                <role>Main Actor</role>
+                <gender>Female</gender>
+            </actor>
+            <actor id="4">
+                <name>
+                    <fname>Monica</fname>
+                    <lname>Bellucci</lname>
+                </name>
+                <role>Supporting</role>
+                <gender>Female</gender>
+            </actor>
+            <actor id="5">
+                <name>
+                    <fname>Ben</fname>
+                    <lname>Whishaw</lname>
+                </name>
+                <role>Supporting</role>
+                <gender>Male</gender>
+            </actor>
+		</actors>
+	</movie>
+	<movie id="102">
+        <title>Enchanted</title>
+        <date>
+            <year>2007</year>
+            <month>November</month>
+            <day>21</day>
+        </date>
+        <genres>
+            <genre id="1">Animation</genre>
+            <genre id="2">Comedy</genre>
+            <genre id="3">Family</genre>
+        </genres>
+        <synopsis>The beautiful princess Giselle is banished by an evil queen from her magical, musical animated land and finds herself in the gritty reality of the streets of modern-day Manhattan. Shocked by this strange new environment that doesn't operate on a "happily ever after".</synopsis>
+        <duration>107 min</duration>
+        <actors>
+            <actor id="1">
+                <name>
+                    <fname>Amy</fname>
+                    <lname>Adams</lname>
+                </name>
+                <role>Main Actor</role>
+                <gender>Female</gender>
+            </actor>
+            <actor id="2">
+                <name>
+                    <fname>Patrick</fname>
+                    <lname>Dempsey</lname>
+                </name>
+                <role>Main Actor</role>
+                <gender>Male</gender>
+            </actor>
+            <actor id="3">
+                <name>
+                    <fname>James</fname>
+                    <lname>Marsden</lname>
+                </name>
+                <role>Supporting</role>
+                <gender>Male</gender>
+            </actor>
+            <actor id="4">
+                <name>
+                    <fname>Timothy</fname>
+                    <lname>Spall</lname>
+                </name>
+                <role>Supporting</role>
+                <gender>Male</gender>
+            </actor>
+        </actors>
+    </movie>
+        <movie id="103">
+        <title>Krampus</title>
+        <date>
+            <year>2015</year>
+            <month>December</month>
+            <day>04</day>
+        </date>
+        <genres>
+            <genre id="1">Comedy</genre>
+            <genre id="2">Fantasy</genre>
+            <genre id="3">Horror</genre>
+        </genres>
+        <synopsis>When his dysfunctional family clashes over the holidays, young Max (Emjay Anthony) is disillusioned and turns his back on Christmas. Little does he know, this lack of festive spirit has unleashed the wrath of Krampus: a demonic force of ancient evil intent on punishing non-believers.</synopsis>
+        <duration>98 min</duration>
+        <actors>
+            <actor id="1">
+                <name>
+                    <fname>Adam</fname>
+                    <lname>Scott</lname>
+                </name>
+                <role>Main Actor</role>
+                <gender>Male</gender>
+            </actor>
+            <actor id="2">
+                <name>
+                    <fname>Toni</fname>
+                    <lname>Collete</lname>
+                </name>
+                <role>Main Actor</role>
+                <gender>Female</gender>
+            </actor>
+            <actor id="3">
+                <name>
+                    <fname>David</fname>
+                    <lname>Koechner</lname>
+                </name>
+                <role>Main Actor</role>
+                <gender>Male</gender>
+            </actor>
+            <actor id="4">
+                <name>
+                    <fname>Allison</fname>
+                    <lname>Tolman</lname>
+                </name>
+                <role>Supporting</role>
+                <gender>Female</gender>
+            </actor>
+        </actors>
+    </movie>
+</movies>
