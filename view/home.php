@@ -2,9 +2,11 @@
 
 <html lang="en">
 <?php
+session_start();
     include '../function/delete-fnc/delete_movie.php';
     include '../function/add-fnc/add_movie.php';
     include '../function/edit-fnc/edit_movie.php';
+
     include '../function/get-fnc/display_allmovie.php';
 
     include 'header.php';
@@ -19,28 +21,29 @@
 
     <!-- Page Content -->
     <div class="container" >
-
+<?php  include '../function/search-fnc/search.php';?>
         <!-- Portfolio Item Heading -->
         <div class="row">
             <div class="col-lg-12" style="margin-top:0px;">
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
-                <h1 class="page-header">List Of Movie</h1>
+                <h1 class="page-header">Movie Directory</h1>
                     </div>
-                    <div class="col-lg-3" style="margin-top:3.25em; padding:0em;">
+                    <div class="col-lg-3" style="margin-top:3.25em; margin-bottom:2em; padding:0em;">
+                    <form method="post" action="<?php $_SERVER['PHP_SELF'];?>?search">
                     <div class="input-group">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="search_key" type="text" required>
                         <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">
+                            <button type="submit" class="btn btn-default" type="button" name="search_button">
                                 <span class="glyphicon glyphicon-search"></span>
                         </button>
                         </span>
                     </div>
+                    </form>
                     </div>
             </div>
         </div>
         <!-- /.row -->
-
 
 <div class="table-responsive">
   <table class="table table-hover table-bordered table-condensed">
@@ -61,7 +64,7 @@
 <?php foreach($movie_xml->movie as $movie) :?>
     <tr>
     <td><?php $movie_id = $movie->attributes(); echo $movie_id ?></td>
-      <td><a href="movie_page.php?movie_id=<?php echo $movie_id ?>"><?php echo $movie->title; ?><a></td>
+      <td><a href="movie_page.php?movie_id=<?php echo $movie_id; ?>"><?php echo $movie->title; ?><a></td>
       <td><?php echo $movie->date->year; ?></td>
       <td><?php echo $movie->date->month; ?></td>
       <td><?php echo $movie->date->day; ?></td>

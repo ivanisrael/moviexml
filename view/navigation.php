@@ -9,20 +9,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.php">Movie Directory</a>
+                <a class="navbar-brand" href="home.php">Welcome, <?php echo $_SESSION['SESS_USERNAME'] ;?>!</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" style="margin-left:3em;">
                     <li>
                         <a href="home.php">View</a>
                     </li>
                     <li>
                   <!-- Trigger the modal with a button -->
                     <a data-toggle="modal" data-target="#MyaddMovie">Insert</a>
-                    </li>
-                    <li>
-                        <a href="find.php">Find</a>
                     </li>
                     <li>
                         <a href="../index.php">Logout</a>

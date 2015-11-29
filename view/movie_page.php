@@ -2,6 +2,7 @@
 
 <html lang="en">
 <?php
+session_start();
     include '../function/add-fnc/add_movie.php';
     include '../function/add-fnc/add_genre.php';
     include '../function/add-fnc/add_actor.php';
@@ -66,7 +67,7 @@
 
                 <!-- Blog Categories Well -->
                 <div class="well">
-                    <h4><strong>GENGRE</strong>
+                    <h4><strong>GENRE</strong>
 <button type="submit" id= "<?php echo $movie_id;?>" name="add" value="<?php echo $movie_id;?>" class="btn" style="background-color:transparent;" aria-label="Left Align" data-toggle="modal" data-target="#AddGenre">
  <span class="glyphicon glyphicon glyphicon-plus" style="color:green;" aria-hidden="true"></span> Add </button>
                     </h4>
@@ -128,8 +129,13 @@
         </div>
         <!-- /.row -->
 
-        <hr>
 </div>
+
+<?php
+    include 'footer.php';
+?>
+
+</body>
 
 <?php
 echo "<center>";
@@ -137,10 +143,6 @@ echo "<center>";
     echo "</center>";
     include 'modal/modal_add_genre.php';
     include 'modal/modal_add_actor.php';
-    include 'modal/modal_edit_specific_movie.php';
-    include 'footer.php';
-?>
-
-</body>
+    include 'modal/modal_edit_specific_movie.php';?>
 
 </html>

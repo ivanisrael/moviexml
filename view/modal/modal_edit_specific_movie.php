@@ -41,7 +41,7 @@
         </div>
         <div class="modal-footer">
           <a href="#" data-dismiss="modal" class="btn btn-default">Cancel</a>
-           <button type="submit"  name="edit_movie" value="<?php echo $movie_id;?>" class="btn btn-warning" >Upadate</button>
+           <button type="submit"  name="edit_movie" value="<?php echo $movie_id;?>" class="btn btn-warning" >Update</button>
 
         </div>
         </form>

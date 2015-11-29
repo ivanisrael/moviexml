@@ -46,7 +46,8 @@ Find:
 
 xquery for $d in db2-fn:xmlcolumn('THEATRE.MOVIE_INFO')/movies/movie let $emp := $d where $d[matches(title, 'Krampus')] order by $d/@id return $emp
 
-xquery for $d in db2-fn:xmlcolumn('THEATRE.MOVIE_INFO')/movies/movie let $emp := $d where $d[matches(lower-case(title), lower-case('ra'))] order by $d/@id return $emp
+xquery for $d in db2-fn:xmlcolumn('THEATRE.MOVIE_INFO')/movies/movie let $emp := $d where $d[matches(lower-case(title), lower-case('ra'))] or $d[matches(lower-case(genres), lower-case('action'))] order by $d/@id return <movies>{$emp}</movies>
+xquery for $d in db2-fn:xmlcolumn('THEATRE.MOVIE_INFO')/movies/movie let $emp := $d where $d[matches(lower-case(genres), lower-case('action'))] order by $d/@id return <movies>{$emp}</movies>
 
 xquery for $d in db2-fn:xmlcolumn('THEATRE.MOVIE_INFO')/movies let $emp := $d order by $d/@id return $emp
 
