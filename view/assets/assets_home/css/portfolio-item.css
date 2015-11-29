@@ -1,0 +1,44 @@
+
+body {
+    padding-top: 70px; 
+}
+
+.navbar-brand {
+	font-size: 1.80em;
+}
+
+.navbar-nav {
+	font-size: 1.25em;
+	text-align: left;
+}
+
+.navbar-inverse .navbar-brand {
+	color:white;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: gray;
+  background-color: transparent;
+}
+
+
+.navbar-inverse .navbar-nav > li > a{
+	padding-left: 50px;
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: gray;
+  background-color: transparent;
+}
+
+footer {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.page-header{
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+.alistoflink{
+}
+
+.deletealist{
+	margin-left: 0.25em;
+    color: red;
+    display: none;
+}
+.alistoflink:hover .deletealist {
+	color: red;
+	text-decoration: none;
+   display:inline;
+}
