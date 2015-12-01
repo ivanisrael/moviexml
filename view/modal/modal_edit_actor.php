@@ -20,7 +20,20 @@
         </div>
           <div class="form-group">
           <label for="InputRole">Role</label>
-        <input class="form-control" name="for-InputRole" value="<?php echo $actor->role;?>" type="text" required>
+          <?php
+            if($actor->role == "Main Actor"){
+              $main = "checked";
+            }else{
+              $main = "unchecked";
+            }
+            if($actor->role == "Supporting"){
+              $support = "checked";
+            }else{
+              $support = "unchecked";
+            }
+          ?>
+             <input  type="radio" name="for-InputRole" value="Main Actor" <?php echo $main;?>> Main Actor
+              <input  type="radio" name="for-InputRole" value="Supporting" <?php echo $support;?>> Supporting Actor
         </div>
         <div class="form-group">
           <label for="InputRole">Gender: </label>

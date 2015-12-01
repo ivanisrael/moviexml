@@ -20,7 +20,8 @@
         </div>
           <div class="form-group">
           <label for="InputRole">Role</label>
-        <input class="form-control" name="for-InputRole" placeholder="Enter Role" type="text" required>
+             <input name="for-InputRole" type="radio" value="Main Actor" checked> Main Actor
+              <input name="for-InputRole" type="radio" value="Supporting" > Supporting Actor
         </div>
         <div class="form-group">
           <label for="InputRole">Gender: </label>

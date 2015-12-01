@@ -101,9 +101,11 @@ session_start();
  <span class="glyphicon glyphicon glyphicon-plus" style="color:green;" aria-hidden="true"></span> Add </button>
                     </h4>
                     <div class="row">
+                     <h5 style="margin-left:1em;"><strong>Main Actor</strong><h5>
                         <div class="col-lg-12">
                             <ul class="list-unstyled">
-                            <?php foreach($movie_xml->actors->actor as $actor) :?>
+                            <?php foreach($movie_xml->actors->actor as $actor) :
+                            		if ($actor->role == "Main Actor"){?>
                                 <li class="alistoflink">
                                 <a href="#MyeditActor<?php echo $actor->attributes();?>" data-toggle="modal" data-target="#MyeditActor<?php echo $actor->attributes();?>"><?php echo $actor->name->fname; ?> <?php echo $actor->name->lname;?> </a> 
                                 <?php include 'modal/modal_edit_actor.php';?>
@@ -114,12 +116,37 @@ session_start();
                                 <?php include 'modal/modal_confirmation_delete_actor.php';?>
                                 </center>
                                 </li>
-                            <?php endforeach;  ?>
+                            <?php }
+                             endforeach;  ?>
                             </ul>
                         </div>
 
                     </div>
                     <!-- /.row -->
+
+                     <div class="row">
+                     <h5 style="margin-left:1em;"><strong>Supporting Actor</strong><h5>
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled">
+                            <?php foreach($movie_xml->actors->actor as $actor) :
+                            		if ($actor->role == "Supporting"){?>
+                                <li class="alistoflink">
+                                <a href="#MyeditActor<?php echo $actor->attributes();?>" data-toggle="modal" data-target="#MyeditActor<?php echo $actor->attributes();?>"><?php echo $actor->name->fname; ?> <?php echo $actor->name->lname;?> </a> 
+                                <?php include 'modal/modal_edit_actor.php';?>
+
+                                <a href="#MydeleteActor<?php echo $actor->attributes();?>" class='deletealist'  data-toggle="modal" data-target="#MydeleteActor<?php echo $actor->attributes();?>">  
+                                <span class="glyphicon glyphicon-remove" style="color:red;" aria-hidden="true"></span></a>
+                                <center>
+                                <?php include 'modal/modal_confirmation_delete_actor.php';?>
+                                </center>
+                                </li>
+                            <?php }
+                             endforeach;  ?>
+                            </ul>
+                        </div>
+
+                    </div>
+
                 </div>
 
 
